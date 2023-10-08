@@ -22,3 +22,16 @@ button{
   border: 0.3px dashed;
   border-radius: 5px;
 }
+
+.owner{
+  display: block;
+}
+
+.details{
+  display: none;
+}
+
+.bankAccount{
+display: none;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

@@ -10,16 +10,16 @@
 </head>
 
 <body>
-  <form>
+  <form class="details">
     <div class="brandName">
       <h3>Brand name (in English) *</h3>
-      <input type="text" min="1" max="20" required class="form-control input11" placeholder="Brand name (In English)">
+      <input type="text" min="1" max="20" required class="form-control input11" id="basic-url8"  placeholder="Brand name (In English)">
     </div>
 
 
     <div class="brandName descriptionInput">
       <h3>Description (optional)</h3>
-      <input type="text" min="1" max="20" required class="form-control input22" placeholder="Description">
+      <input type="text" min="1" max="20" required class="form-control input22" id="basic-url9"  placeholder="Description">
     </div>
 
     <div class="brandName">
@@ -33,7 +33,7 @@
 
     <div class="brandName">
       <h3 for="exampleDataList" class="form-label">Datalist example</h3>
-      <input class="form-control input44" min="1" max="20" required list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+      <input class="form-control input44" min="1" max="20" required list="datalistOptions" id="exampleDataList" aria-describedby="basic-addon3 basic-addon4" placeholder="Type to search...">
       <datalist id="datalistOptions">
         <option value="New York">
         <option value="Russia">
@@ -45,8 +45,8 @@
 
     <div class="brandName">
       <h3 for="exampleDataList" class="form-label">Category *</h3>
-      <input class="form-control input55" min="1" max="20" required list="datalistOptionss" placeholder="Category">
-      <datalist id="datalistOptionss">
+      <input class="form-control input55" min="1" max="20" required list="datalistOptions2" placeholder="Category">
+      <datalist id="datalistOptions2">
         <option value="France">
         <option value="Dev Ops">
         <option value="Other">
@@ -55,6 +55,72 @@
     </div> 
     <button>add</button>   
   </form>
+
+<form class="owner">
+
+  <h1>Business owner !</h1>
+  <div class="brandName">
+    <h3>First name *</h3>
+    <input type="text" min="1" max="12" required class="form-control nameInput1" id="basic-url1"  placeholder="First name">
+  </div>
+
+
+  <div class="brandName">
+    <h3>Last name</h3>
+    <input type="text" min="1" max="20" required class="form-control nameInput2" id="basic-url2"  placeholder="Last name">
+  </div>
+
+  <div class="brandName">
+    <h3>Email</h3>
+    <input type="text" min="1" max="20" required class="form-control nameInput3" id="basic-url3"  placeholder="Email">
+  </div>
+
+  <button class="btn2">add</button>
+</form>
+
+<form class="bankAccount">
+  <h1>Bank account details !</h1>
+
+
+  <div class="brandName">
+    <h3>Beneficiary name *</h3>
+    <input type="text" min="1" max="12" required class="form-control benName" id="basic-url4"  placeholder="Beneficiary name, e.g Alphabet Inc ">
+  </div>
+
+
+  <div class="brandName">
+    <h3>IBeN *</h3>
+    <input type="text" min="1" max="12" required class="form-control eban" id="basic-url5"  placeholder="IBeN">
+  </div>
+
+ 
+  <div class="brandName">
+    <h3>Bank name *</h3>
+    <input type="text" min="1" max="12" required class="form-control bankName" id="basic-url6"  placeholder="Bank name">
+  </div>
+
+
+  <div class="brandName">
+    <h3>SWIFT *</h3>
+    <input type="text" min="1" max="16" required class="form-control cartNumber" id="basic-url7" placeholder="SWIFT">
+  </div>
+
+  <div class="brandName">
+    <h3>Bank currency *</h3>
+    <input class="form-control vale" min="1" max="5" required list="datalistOptions1" placeholder="Bank currency...">
+    <datalist id="datalistOptions1">
+      <option value="AED">
+      <option value="USD">
+      <option value="EUR">
+      <option value="GBP">
+      <option value="OMR">
+      <option value="SAR">
+      <option value="QAR">
+    </datalist>
+  </div>
+
+  <button>add</button>
+</form>
 </body>
 
 </html>
